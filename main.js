@@ -160,3 +160,10 @@ function paddleInCanvas(){
     mouseY =0;
   }  
 }
+
+function parent(){
+  
+}
+
+fill(0, 0, 0, 150);
+rect(0, 0, gameConfig.screenX, gameConfig.screenY);
