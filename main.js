@@ -9,7 +9,7 @@ var paddle1Y;
 var  playerscore =0;
 var audio1;
 var pcscore =0;
-//ball x and y and speedx speed y and radius
+
 var ball = {
     x:350/2,
     y:480/2,
@@ -18,6 +18,17 @@ var ball = {
     dy:3
 }
 game_status = ""
+
+function preload(){
+  gameover= loadSound("gameover.wav");
+  mario_jump = loadSound("jump.wav");
+  mario_coin = loadSound("coin.wav");
+  mario_kick = loadSound("kick.wav");
+  mario_die = loadSound("mariodie.wav");
+  world_start = loadSound("world_start.wav");
+  setSprites();
+  MarioAnimation();
+}
 
 function setup(){
   var canvas =  createCanvas(700,600);
